@@ -1,6 +1,7 @@
-import Time from '@/components/client/time';
 import axios from 'axios';
 import React from 'react';
+
+import Time from '@/components/client/time';
 
 const FetchServer = ({ data }) => {
   console.log('data', data);

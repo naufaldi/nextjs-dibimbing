@@ -1,6 +1,7 @@
-import Time from '@/components/client/time';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
+import Time from '@/components/client/time';
 
 export default function CSRPage() {
   const [data, setData] = useState();

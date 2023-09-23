@@ -1,6 +1,8 @@
-import Time from '@/components/client/time';
 import axios from 'axios';
 import React from 'react';
+
+import FetchTimeServer from '@/components/client/fetch-time-server';
+import Time from '@/components/client/time';
 
 const FetchServer = ({ data }) => {
   console.log('data', data);
@@ -9,6 +11,8 @@ const FetchServer = ({ data }) => {
       {data?.map((item, index) => (
         <Time data={item} key={index} />
       ))}
+      <h1 className='text-2xl font-semibold'>Ini Component Fetch Server</h1>
+      <FetchTimeServer />
     </div>
   );
 };

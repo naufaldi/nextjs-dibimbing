@@ -1,6 +1,8 @@
-import Time from '@/components/client/time';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+
+import FetchTime from '@/components/client/fetch-time';
+import Time from '@/components/client/time';
 
 export default function CSRPage() {
   const [data, setData] = useState();
@@ -21,6 +23,9 @@ export default function CSRPage() {
   return (
     <main>
       {data && data?.map((item, index) => <Time data={item} key={index} />)}
+      {/* Ini Fetch Time */}
+      <h1 className='text-2xl font-bold'>Ini Fetch Time</h1>
+      <FetchTime />
     </main>
   );
 }

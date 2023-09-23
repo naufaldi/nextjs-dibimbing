@@ -1,7 +1,18 @@
 import '@/styles/globals.css';
 
-import { Inter, Roboto_Condensed, Ubuntu_Mono } from 'next/font/google';
+import {
+  Inter,
+  Roboto_Condensed,
+  Skranji,
+  Ubuntu_Mono,
+} from 'next/font/google';
 import Head from 'next/head';
+
+const skranji = Skranji({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+});
+
 const roboto_c = Roboto_Condensed({
   subsets: ['latin'],
   weight: ['400', '700'],
@@ -9,7 +20,7 @@ const roboto_c = Roboto_Condensed({
 
 const ubuntu_m = Ubuntu_Mono({
   subsets: ['latin'],
-  weight: ['400'],
+  weight: ['400', '700'],
 });
 const inter = Inter({
   subsets: ['latin'],
@@ -27,6 +38,7 @@ export default function App({ Component, pageProps }) {
             --font-inter: ${inter.style.fontFamily};
             --font-roboto_c: ${roboto_c.style.fontFamily};
             --font-mono: ${ubuntu_m.style.fontFamily};
+            --font-skran: ${skranji.style.fontFamily};
           }
         `}
       </style>

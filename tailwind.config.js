@@ -11,6 +11,7 @@ module.exports = {
         robotoc: 'var(--font-roboto_c)',
         primary: 'var(--font-inter)',
         mono: 'var(--font-mono)',
+        skran: 'var(--font-skran)',
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
